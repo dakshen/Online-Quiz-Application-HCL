@@ -205,7 +205,8 @@ transform:translate(-50%,-50%) scale(1);
     position:relative;
     left:-50%;
     width:100%;
-    background:#dde0e7;
+    background:url(bg2.jpg) no-repeat;
+    background-size:cover;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -224,7 +225,7 @@ transform:translate(-50%,-50%) scale(1);
 .quiz-section .quiz-box{
     position:relative;
     width:500px;
-    background:transparent;
+    background:whitesmoke;
     border:2px solid #24708b;
     border-radius:6px;
     display:flex;
@@ -358,8 +359,8 @@ transform:translate(-50%,-50%) scale(1);
     left:50%;
     transform:translate(-50%,-50%);
     width:500px;
-    background:transparent;
-    border:2px solid #24708b;
+    background:#e9e7ea;
+    border:3px solid #24708b;
     border-radius:6px;
     padding:20px;
     display:flex;
@@ -379,6 +380,7 @@ transform:translate(-50%,-50%) scale(1);
 
 .result-box h2{
     font-size:52px;
+    text-decoration: 2px solid black underline;
 }
 
 .result-box .percentage-container{
@@ -471,20 +473,26 @@ transform:translate(-50%,-50%) scale(1);
     background:transparent;
     position:fixed;
     top:2%;
-    left:90%;
+    left:75%;
+    display:flex;
+    flex-direction: row;
     align-items:center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-left:10px;
     margin:0;
     height:40px;
-    width:120px;
-    font-size: 25px;
+    width:350px;
+    font-size: 20px;
     font-weight:500;
     color:black;
     opacity:0;
     border-radius:5px;
     border:2px solid black;
     
+}
+
+#displayTime{
+    font-size: 25px;
 }
 
 .timer.active{
@@ -498,7 +506,7 @@ transform:translate(-50%,-50%) scale(1);
 {
     position:fixed;
     width:500px;
-    background: transparent;
+    background: whitesmoke;
     border:2px solid #24708b;
     border-radius:6px;
     display:flex;

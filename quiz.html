@@ -1,4 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Online Quiz</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+  
+    <main class="main">
+        <header class="header">
+            <a href="#" class="logo">Quiz.</a>
+            <nav class="navbar">
+                <a href="https://mail.google.com/" target="_blank">| Contact Mail- abc@gmail.com|</a>
+            </nav>
+        </header>
+        <div class="container">
+            <section class="quiz-section">
+                <div  class="timer">
+                    <h5 id="displayTime">00:00:00</h5></div>
+                <div class="quiz-box">
+                <h1>Online Quiz</h1>
+                <div class="quiz-header">
+                    <span>HTML</span>
+                    <span class="header-score">Score: 0 / 5</span>
+                </div>
+                <h2 class="question-text">What does HTML stand for?</h2>
+                <div class="option-list">
+                    <!-- <div class="option">
+                        <span>A. Hyper Type Multi Language</span>
+                    </div>
+                    <div class="option">
+                        <span>B. Hyper Text Multiple Language</span>
+                    </div>
+                    <div class="option">
+                        <span>C. Hyper Text Markup Language</span>
+                    </div>
+                    <div class="option">
+                        <span>D. Home Text Multi Language</span>
+                    </div> -->
+                </div>
+                <div class="quiz-footer">
+                    <span class="question-total">1 of 5</span>
+                    <button class="next-btn">Next</button>
+                </div>
+             </div>  
+             <div class="result-box">
+                <h2>Quiz Result</h2>
+                <div class="percentage-container">
+                    <div class="circular-progress">
+                        <span class="progress-value">0%</span>
+                    </div>
+                    <span class="score-text">Your Score is 0 out of 5</span>
+                </div>
+                <div class="buttons">
+                    <button class="tryAgain-btn">Try Again</button>
+                    <button class="goHome-btn">Home Page</button>
+                </div>
+             </div>
+             <div class="course">
+                <h2>Course List</h2>
+                <label class='head' for="course-select">Select a Course:</label>
+                <select class="select-bar" name="course-select" id="course-select">
+                  <option class='bar-option' value="HTML">HTML</option>
+                  <option class='bar-option'value="PYTHON">PYTHON</option>
+                  <option class='bar-option'value="CSS">CSS</option>
+                </select>
+                <br><br>
+                <button class="submit-btn">Submit</button>
+             </div> 
+            </section>
+            
+        <section class="home">
+            <div class="home-content">
+                <h1>Online Quiz</h1>
+                <p>Welcome to our quiz application to enhance and expand your mind and skills</p>
+                <button class="start-btn">Start Quiz</button>
+            </div>
+        </section>
+        </div>
+    </main>
+    <div class="popup-info">
+        <h2>Quiz Guide</h2>
+        <span class="info">1. Once if you start your quiz there is no way to exit.</span>
+        <span class="info">2. This quiz gives you four choices of answer to select.</span>
+        <span class="info">3. Once a choice is selected it cannot be changed.</span>
+        <span class="info">4. Next question can we viewed only if the current question is completed.</span>
+        <span class="info">5. Your quiz result  will be displayed at the  end of the quiz.</span>
+        <div class="btn-group">
+            <button class="info-btn exit">Exit</button>
+            <a href="#" class="info-btn continue">Continue</a>
+        </div>
+    </div>
 
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
